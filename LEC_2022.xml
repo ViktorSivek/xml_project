@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="LEC_2022.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<LEC rok="2022" xmlns="urn:vse.cz:LEC2022:sivv01"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     >
+    
+    
+    <!--__________ G2 Esports __________-->
+    
+    <tym umisteni="1">
+        <informace>
+            <nazev>G2Esports</nazev>
+            <sidlo>Germany</sidlo>
+            <vlastnik>Carlos Rodríguez Santiago</vlastnik>
+            <zalozeni>2015-10-15</zalozeni>
+            <partneri>
+                <partner>Logitech</partner>
+                <partner>Paysafecard</partner>
+                <partner>Twitch</partner>
+                <partner>BMW</partner>
+            </partneri>
+            <web>https://www.g2esports.com/</web>
+            <obrazek image="g2.png">1</obrazek>
+        </informace>
+        <hraci>
+            <hrac role="horní">
+                <informace>
+                    <prezdivka>Broken Blade</prezdivka>
+                    <jmeno>Sergen</jmeno>
+                    <prijmeni>Çelik</prijmeni>
+                    <narodnost>Germany</narodnost>
+                    <narozen>2000-01-19</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>3.91</zabiti>
+                    <smrti>2.35</smrti>
+                    <asistence>5.71</asistence>
+                    <farmaZaMinutu>8.05</farmaZaMinutu>
+                    <zlatoZaMinutu>408</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Ornn</sampion>
+                        <sampion>Akshan</sampion>
+                        <sampion>Gnar</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>    
+            <hrac role="džungle">
+                <informace>
+                    <prezdivka>Jankos</prezdivka>
+                    <jmeno>Marcin</jmeno>
+                    <prijmeni>Jankowski</prijmeni>
+                    <narodnost>Poland</narodnost>
+                    <narozen>1995-07-23</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>2.5</zabiti>
+                    <smrti>3.03</smrti>
+                    <asistence>8.35</asistence>
+                    <farmaZaMinutu>5.21</farmaZaMinutu>
+                    <zlatoZaMinutu>333</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jarvan4</sampion>
+                        <sampion>XinZhao</sampion>
+                        <sampion>Viego</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="středová">
+                <informace>
+                    <prezdivka>caPs</prezdivka>
+                    <jmeno>Rasmus</jmeno>
+                    <prijmeni>Winther</prijmeni>
+                    <narodnost>Denmark</narodnost>
+                    <narozen>1999-11-17</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>4.15</zabiti>
+                    <smrti>2.53</smrti>
+                    <asistence>6.24</asistence>
+                    <farmaZaMinutu>8.19</farmaZaMinutu>
+                    <zlatoZaMinutu>412</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Ahri</sampion>
+                        <sampion>Corki</sampion>
+                        <sampion>Ryze</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="spodní">
+                <informace>
+                    <prezdivka>Flakked</prezdivka>
+                    <jmeno>Victor</jmeno>
+                    <prijmeni>Tortosa</prijmeni>
+                    <narodnost>Spain</narodnost>
+                    <narozen>2001-04-25</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>4.21</zabiti>
+                    <smrti>1.61</smrti>
+                    <asistence>6.06</asistence>
+                    <farmaZaMinutu>9.44</farmaZaMinutu>
+                    <zlatoZaMinutu>448</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jinx</sampion>
+                        <sampion>Aphelios</sampion>
+                        <sampion>Xayah</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="podpora">
+                <informace>
+                    <prezdivka>Targamas</prezdivka>
+                    <jmeno>Raphaël</jmeno>
+                    <prijmeni>Crabbé</prijmeni>
+                    <narodnost>Belgium</narodnost>
+                    <narozen>2000-06-30</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>1.03</zabiti>
+                    <smrti>2.18</smrti>
+                    <asistence>9.88</asistence>
+                    <farmaZaMinutu>1.23</farmaZaMinutu>
+                    <zlatoZaMinutu>246</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Rakan</sampion>
+                        <sampion>Nautilus</sampion>
+                        <sampion>Renata Glasc</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+        </hraci>
+    </tym>
+    
+    <!--__________ Rogue __________-->
+    
+    <tym umisteni="2">
+        <informace>
+            <nazev>Rogue</nazev>
+            <sidlo>Germany</sidlo>
+            <vlastnik>Simon Payne</vlastnik>
+            <zalozeni>2016-05-03</zalozeni>
+            <partneri>
+                <partner>ReKTGlobal</partner>
+                <partner>Steve Aoki</partner>
+                <partner>KIA</partner>
+            </partneri>
+            <web>https://www.rogue.gg/</web>
+            <obrazek image="rogue.jpg">2</obrazek>
+            
+        </informace>
+        <hraci>
+            <hrac role="horní">
+                <informace>
+                    <prezdivka>Odoamne</prezdivka>
+                    <jmeno>Andrei</jmeno>
+                    <prijmeni>Pascu</prijmeni>
+                    <narodnost>Romania</narodnost>
+                    <narozen>1995-01-18</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>2.83</zabiti>
+                    <smrti>1.93</smrti>
+                    <asistence>6.23</asistence>
+                    <farmaZaMinutu>8.21</farmaZaMinutu>
+                    <zlatoZaMinutu>408</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jayce</sampion>
+                        <sampion>Gnar</sampion>
+                        <sampion>Graves</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>    
+            <hrac role="džungle">
+                <informace>
+                    <prezdivka>Malrang</prezdivka>
+                    <jmeno>Kim</jmeno>
+                    <prijmeni>Geun-seong</prijmeni>
+                    <narodnost>South Korea</narodnost>
+                    <narozen>2000-02-09</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>2.8</zabiti>
+                    <smrti>2.67</smrti>
+                    <asistence>8.07</asistence>
+                    <farmaZaMinutu>4.65</farmaZaMinutu>
+                    <zlatoZaMinutu>328</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>XinZhao</sampion>
+                        <sampion>Jarvan4</sampion>
+                        <sampion>Volibear</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="středová">
+                <informace>
+                    <prezdivka>Larssen</prezdivka>
+                    <jmeno>Emil</jmeno>
+                    <prijmeni>Larsson</prijmeni>
+                    <narodnost>Sweden</narodnost>
+                    <narozen>2000-03-30</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>4.3</zabiti>
+                    <smrti>1.73</smrti>
+                    <asistence>6.3</asistence>
+                    <farmaZaMinutu>8.73</farmaZaMinutu>
+                    <zlatoZaMinutu>434</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Viktor</sampion>
+                        <sampion>Oriana</sampion>
+                        <sampion>Sylas</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="spodní">
+                <informace>
+                    <prezdivka>Comp</prezdivka>
+                    <jmeno>Markos</jmeno>
+                    <prijmeni>Stamkopoulos</prijmeni>
+                    <narodnost>Greece</narodnost>
+                    <narozen>2001-12-20</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>4.57</zabiti>
+                    <smrti>1.73</smrti>
+                    <asistence>5.37</asistence>
+                    <farmaZaMinutu>9.94</farmaZaMinutu>
+                    <zlatoZaMinutu>467</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Aphelios</sampion>
+                        <sampion>Jinx</sampion>
+                        <sampion>Caitlyn</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="podpora">
+                <informace>
+                    <prezdivka>Trymbi</prezdivka>
+                    <jmeno>Adrian</jmeno>
+                    <prijmeni>Trybus</prijmeni>
+                    <narodnost>Poland</narodnost>
+                    <narozen>2000-10-20</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>1.1</zabiti>
+                    <smrti>2.8</smrti>
+                    <asistence>10.4</asistence>
+                    <farmaZaMinutu>0.84</farmaZaMinutu>
+                    <zlatoZaMinutu>247</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Rakan</sampion>
+                        <sampion>Nautilus</sampion>
+                        <sampion>Nami</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+        </hraci>
+    </tym>
+    
+    <!--__________ Fnatic __________-->
+    
+    <tym umisteni="3">
+        <informace>
+            <nazev>Fnatic</nazev>
+            <sidlo>United Kingdom</sidlo>
+            <vlastnik>Sam Mathews</vlastnik>
+            <zalozeni>2011-03-14</zalozeni>
+            <partneri>
+                <partner>OnePlus</partner>
+                <partner>Monster Energy</partner>
+                <partner>AMD</partner>
+            </partneri>
+            <web>https://www.fnatic.com/</web>
+            
+            <obrazek image="fnatic.png">3</obrazek>
+            
+        </informace>
+        <hraci>
+            <hrac role="horní">
+                <informace>
+                    <prezdivka>Wunder</prezdivka>
+                    <jmeno>Martin</jmeno>
+                    <prijmeni>Hansen</prijmeni>
+                    <narodnost>Denmark</narodnost>
+                    <narozen>1998-11-09</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>2.97</zabiti>
+                    <smrti>3.17</smrti>
+                    <asistence>4.43</asistence>
+                    <farmaZaMinutu>7.91</farmaZaMinutu>
+                    <zlatoZaMinutu>390</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jayce</sampion>
+                        <sampion>Gragas</sampion>
+                        <sampion>Camille</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>    
+            <hrac role="džungle">
+                <informace>
+                    <prezdivka>Razork</prezdivka>
+                    <jmeno>Iván</jmeno>
+                    <prijmeni>Díaz</prijmeni>
+                    <narodnost>Spain</narodnost>
+                    <narozen>2000-10-07</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>2.9</zabiti>
+                    <smrti>3</smrti>
+                    <asistence>6.87</asistence>
+                    <farmaZaMinutu>5.69</farmaZaMinutu>
+                    <zlatoZaMinutu>344</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Viego</sampion>
+                        <sampion>Volibear</sampion>
+                        <sampion>Diana</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="středová">
+                <informace>
+                    <prezdivka>Humanoid</prezdivka>
+                    <jmeno>Marek</jmeno>
+                    <prijmeni>Brázda</prijmeni>
+                    <narodnost>Czech Republic</narodnost>
+                    <narozen>2000-03-14</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>2.93</zabiti>
+                    <smrti>2.7</smrti>
+                    <asistence>5.7</asistence>
+                    <farmaZaMinutu>8.81</farmaZaMinutu>
+                    <zlatoZaMinutu>423</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Twisted Fade</sampion>
+                        <sampion>LeBlanc</sampion>
+                        <sampion>Viktor</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="spodní">
+                <informace>
+                    <prezdivka>Upset</prezdivka>
+                    <jmeno>Elias</jmeno>
+                    <prijmeni>Lipp</prijmeni>
+                    <narodnost>Germany</narodnost>
+                    <narozen>1999-12-16</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>3.83</zabiti>
+                    <smrti>0.93</smrti>
+                    <asistence>5.1</asistence>
+                    <farmaZaMinutu>9.47</farmaZaMinutu>
+                    <zlatoZaMinutu>437</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Aphelios</sampion>
+                        <sampion>Jinx</sampion>
+                        <sampion>Zeri</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="podpora">
+                <informace>
+                    <prezdivka>Hylissang</prezdivka>
+                    <jmeno>Zdravets</jmeno>
+                    <prijmeni>Galabov</prijmeni>
+                    <narodnost>Bulgaria</narodnost>
+                    <narozen>1995-04-30</narozen>
+                </informace>
+                <statistiky pocetHer="30">
+                    <zabiti>1.1</zabiti>
+                    <smrti>3.5</smrti>
+                    <asistence>8.3</asistence>
+                    <farmaZaMinutu>1.19</farmaZaMinutu>
+                    <zlatoZaMinutu>246</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Thresh</sampion>
+                        <sampion>Pyke</sampion>
+                        <sampion>Rakan</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+        </hraci>
+    </tym>
+    
+    <!--__________ Misfits Gaming __________-->
+    
+    <tym umisteni="4">
+        <informace>
+            <nazev>MisfitsGaming</nazev>
+            <sidlo>Germany</sidlo>
+            <vlastnik>Ben Spoont</vlastnik>
+            <zalozeni>2016-05-18</zalozeni>
+            <partneri>
+                <partner>HyperX</partner>
+                <partner>ASUS</partner>
+                <partner>Intel</partner>
+                <partner>Tezos</partner>
+            </partneri>
+            <web>https://www.misfitsgaming.gg/</web>
+            
+            <obrazek image="misfits.jpg">4</obrazek>
+        </informace>
+        <hraci>
+            <hrac role="horní">
+                <informace>
+                    <prezdivka>HiRit</prezdivka>
+                    <jmeno>Shin</jmeno>
+                    <prijmeni>Tae-min</prijmeni>
+                    <narodnost>South Korea</narodnost>
+                    <narozen>1998-07-24</narozen>
+                </informace>
+                <statistiky pocetHer="25">
+                    <zabiti>2.8</zabiti>
+                    <smrti>3.64</smrti>
+                    <asistence>3.84</asistence>
+                    <farmaZaMinutu>8.27</farmaZaMinutu>
+                    <zlatoZaMinutu>405</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Camille</sampion>
+                        <sampion>Gnar</sampion>
+                        <sampion>Gwen</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>    
+            <hrac role="džungle">
+                <informace>
+                    <prezdivka>Shlatan</prezdivka>
+                    <jmeno>Lucjan</jmeno>
+                    <prijmeni>Ahmad</prijmeni>
+                    <narodnost>Poland</narodnost>
+                    <narozen>2001-07-23</narozen>
+                </informace>
+                <statistiky pocetHer="25">
+                    <zabiti>1.96</zabiti>
+                    <smrti>3.76</smrti>
+                    <asistence>6.72</asistence>
+                    <farmaZaMinutu>5.38</farmaZaMinutu>
+                    <zlatoZaMinutu>330</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>LeeSin</sampion>
+                        <sampion>XinZhao</sampion>
+                        <sampion>Hecarim</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="středová">
+                <informace>
+                    <prezdivka>Vetheo</prezdivka>
+                    <jmeno>Vincent</jmeno>
+                    <prijmeni>Berrié</prijmeni>
+                    <narodnost>France</narodnost>
+                    <narozen>2002-07-26</narozen>
+                </informace>
+                <statistiky pocetHer="25">
+                    <zabiti>4.68</zabiti>
+                    <smrti>2.16</smrti>
+                    <asistence>5.24</asistence>
+                    <farmaZaMinutu>8.72</farmaZaMinutu>
+                    <zlatoZaMinutu>427</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Sylas</sampion>
+                        <sampion>LaBlanc</sampion>
+                        <sampion>Akali</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="spodní">
+                <informace>
+                    <prezdivka>Neon</prezdivka>
+                    <jmeno>Matúš</jmeno>
+                    <prijmeni>Jakubčík</prijmeni>
+                    <narodnost>Slovakia</narodnost>
+                    <narozen>1999-04-24</narozen>
+                </informace>
+                <statistiky pocetHer="25">
+                    <zabiti>3.84</zabiti>
+                    <smrti>2.56</smrti>
+                    <asistence>5.04</asistence>
+                    <farmaZaMinutu>9.1</farmaZaMinutu>
+                    <zlatoZaMinutu>435</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jinx</sampion>
+                        <sampion>Aphelios</sampion>
+                        <sampion>Jhin</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="podpora">
+                <informace>
+                    <prezdivka>Mersa</prezdivka>
+                    <jmeno>Mertai</jmeno>
+                    <prijmeni>Sari</prijmeni>
+                    <narodnost>Greece</narodnost>
+                    <narozen>2002-08-22</narozen>
+                </informace>
+                <statistiky pocetHer="25">
+                    <zabiti>0.44</zabiti>
+                    <smrti>4.64</smrti>
+                    <asistence>8.8</asistence>
+                    <farmaZaMinutu>0.86</farmaZaMinutu>
+                    <zlatoZaMinutu>229</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Leona</sampion>
+                        <sampion>Thresh</sampion>
+                        <sampion>Rakan</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+        </hraci>        
+    </tym>
+    
+</LEC>

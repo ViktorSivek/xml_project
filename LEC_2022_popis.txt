@@ -1,0 +1,5 @@
+XML soubor zpracovává seznam a statistiky týmů, které soutěžili v League of Legends European Championship.
+Jedná se o e-sportový turnaj v mé oblíbené videohře, který se konal začátkem roku 2022 a nedávno jsem ho sledoval.
+Mezi hráči je i jeden český a jeden slovenský hráč.
+Konkrétně jde o seznam prvních 4 týmů, kde jsou uvedeny základní informace o každém hráči a jeho průměrné statistiky
+za odehrané zápasy v turnaji. XDS schéma se bude dát déle použít i na další ročníky.

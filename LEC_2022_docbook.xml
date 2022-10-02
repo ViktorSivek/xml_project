@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="cs">
+    <info>
+        <title>Dokumentace k seminární práci</title>
+        <subtitle>League of legends European championship</subtitle>
+        <author>
+            <personname>
+                <firstname>Viktor</firstname>
+                <surname>Sívek</surname>
+            </personname>
+            <affiliation>
+                <orgname>student VŠE</orgname>
+                <address>
+                    <email>sivv01@vse.cz</email>
+                </address>
+            </affiliation>
+        </author>
+
+    </info>
+    <preface>
+        <title>Úvod</title>
+        <para>Dokumentace k seminární práci pro předmět 4IZ238.</para>
+        <para>V tomto dokumentu jsou popsány základní informace o struktuře dokumentů popsané v XML
+            a použití XSLT transformací jak do podoby HTML stránky, XSLT FO, tak do PDF.</para>
+        <para>Jedná se o práci zaměřenou na letošní soupisku a statistiky týmů účastnící se evropského šampionátu v League of legends.</para>
+    </preface>
+    <chapter>
+        <title>XML Dokument</title>
+<para>Základem celé semestrální práce byl XML dokument obsahující prvky struktorované následujícím způsobem:</para>
+        <programlisting>
+<![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LEC rok="2022" xmlns="urn:vse.cz:LEC2022:sivv01"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    
+    <!--__________ G2 Esports __________-->
+    
+    <tym umisteni="1">
+        <informace>
+            <nazev>G2Esports</nazev>
+            <sidlo>Germany</sidlo>
+            <vlastnik>Carlos Rodríguez Santiago</vlastnik>
+            <zalozeni>2015-10-15</zalozeni>
+            <partneri>
+                <partner>Logitech</partner>
+                <partner>Paysafecard</partner>
+                <partner>Twitch</partner>
+                <partner>BMW</partner>
+            </partneri>
+            <web>https://www.g2esports.com/</web>
+        </informace>
+        <hraci>
+            <hrac role="horní">
+                <informace>
+                    <prezdivka>Broken Blade</prezdivka>
+                    <jmeno>Sergen</jmeno>
+                    <prijmeni>Çelik</prijmeni>
+                    <narodnost>Germany</narodnost>
+                    <narozen>2000-01-19</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>3.91</zabiti>
+                    <smrti>2.35</smrti>
+                    <asistence>5.71</asistence>
+                    <farmaZaMinutu>8.05</farmaZaMinutu>
+                    <zlatoZaMinutu>408</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Ornn</sampion>
+                        <sampion>Akshan</sampion>
+                        <sampion>Gnar</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>    
+            <hrac role="džungle">
+                <informace>
+                    <prezdivka>Jankos</prezdivka>
+                    <jmeno>Marcin</jmeno>
+                    <prijmeni>Jankowski</prijmeni>
+                    <narodnost>Poland</narodnost>
+                    <narozen>1995-07-23</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>2.5</zabiti>
+                    <smrti>3.03</smrti>
+                    <asistence>8.35</asistence>
+                    <farmaZaMinutu>5.21</farmaZaMinutu>
+                    <zlatoZaMinutu>333</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jarvan4</sampion>
+                        <sampion>XinZhao</sampion>
+                        <sampion>Viego</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="středová">
+                <informace>
+                    <prezdivka>caPs</prezdivka>
+                    <jmeno>Rasmus</jmeno>
+                    <prijmeni>Winther</prijmeni>
+                    <narodnost>Denmark</narodnost>
+                    <narozen>1999-11-17</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>4.15</zabiti>
+                    <smrti>2.53</smrti>
+                    <asistence>6.24</asistence>
+                    <farmaZaMinutu>8.19</farmaZaMinutu>
+                    <zlatoZaMinutu>412</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Ahri</sampion>
+                        <sampion>Corki</sampion>
+                        <sampion>Ryze</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="spodní">
+                <informace>
+                    <prezdivka>Flakked</prezdivka>
+                    <jmeno>Victor</jmeno>
+                    <prijmeni>Tortosa</prijmeni>
+                    <narodnost>Spain</narodnost>
+                    <narozen>2001-04-25</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>4.21</zabiti>
+                    <smrti>1.61</smrti>
+                    <asistence>6.06</asistence>
+                    <farmaZaMinutu>9.44</farmaZaMinutu>
+                    <zlatoZaMinutu>448</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Jinx</sampion>
+                        <sampion>Aphelios</sampion>
+                        <sampion>Xayah</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+            <hrac role="podpora">
+                <informace>
+                    <prezdivka>Targamas</prezdivka>
+                    <jmeno>Raphaël</jmeno>
+                    <prijmeni>Crabbé</prijmeni>
+                    <narodnost>Belgium</narodnost>
+                    <narozen>2000-06-30</narozen>
+                </informace>
+                <statistiky pocetHer="34">
+                    <zabiti>1.03</zabiti>
+                    <smrti>2.18</smrti>
+                    <asistence>9.88</asistence>
+                    <farmaZaMinutu>1.23</farmaZaMinutu>
+                    <zlatoZaMinutu>246</zlatoZaMinutu>
+                    <sampioni>
+                        <sampion>Rakan</sampion>
+                        <sampion>Nautilus</sampion>
+                        <sampion>Renata Glasc</sampion>
+                    </sampioni>
+                </statistiky>       
+            </hrac>
+        </hraci>
+    </tym>
+]]>
+		</programlisting>
+        <para>XML je obaleno kořenovým elementem <code>LEC</code> s atributem <code>rok</code>. </para>
+        <para>Jako jmenný prostor jsem použil <code>urn:vse.cz:LEC2022:sivv01</code>. </para>
+        <para>Do XML lze ve stejné formě vkládat i další týmy, popřípadě jiné týmy další ročník.</para>
+        <para>Každý tým má jedinečné umístění jako atribut <code>umisteni</code>. </para>
+        <para>O každém týmu jsou zaznaménány informace o týmu, 5 hráčů týmu, informace o hráči a jeho statistiky. </para>
+    </chapter>
+    
+    <chapter>
+        <title>Validace pomocí XSD a Schematron</title>
+        <para>XML bylo validováno dvěma způsoby. A to pomocí XML schématu a Schematronu.</para>
+        <section>
+            <title>XML Schéma</title>
+            <para>XML Schéma bylo tvořeno ve struktuře slepého benátčana. </para>
+            <para>Atribut <code>rok</code> je nastaven jako required a pomocí regex výrazu omezen na 4 čísla </para>
+            <para>Každý tým má unikátní umístění, které může nabývat pouze hodnot 0 - 10 </para>
+            <programlisting>
+<![CDATA[
+            
+<xs:element name="LEC" type="LECType">
+    <xs:unique name="unikatni_umisteni">
+        <xs:selector xpath="*/tym"/>
+        <xs:field xpath="@umisteni"/>
+    </xs:unique>
+</xs:element>
+
+<xs:simpleType name="umisteniType">
+    <xs:restriction base="xs:decimal">
+         <xs:minExclusive value="0"/>
+         <xs:maxExclusive value="10"/>
+    </xs:restriction>
+</xs:simpleType>
+            
+]]>
+            </programlisting>
+            <para>Každý z hráčů má atribut <code>role</code>, která může nabývat pouze pět různých stringů </para>
+            <programlisting>
+<![CDATA[
+            
+<xs:simpleType name="roleType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="horní"/>
+        <xs:enumeration value="džungle"/>
+        <xs:enumeration value="středová"/>
+        <xs:enumeration value="spodní"/>
+        <xs:enumeration value="podpora"/>
+    </xs:restriction>
+</xs:simpleType>
+            
+]]>
+            </programlisting>
+            
+        </section>
+        <section>
+            <title>Schematron</title>
+            <para>Schematron je zaměřen na porovnávání hodnot.</para>
+            <para>Jelikož XML neobsahuje mnoho hodnot k porovnání Scematron je velmi stručný.</para>
+            <para>Schematron porovnává datum narození hráče s aktuálním datem, protože hráč se musel narodit dříve než dnes.</para>
+            <para>Dále porovnává počty her týmů, protže žádný tým nemohl odehrát více zápasů než tým první.</para>
+            <para>A žádný tým nemohl odehrát méně zápasů, než tým poslední.</para>
+            <programlisting>
+<![CDATA[
+            
+<sch:pattern>
+    <sch:title>Validace data narození</sch:title>
+    <sch:rule context="s:LEC/s:tym/s:hraci/s:hrac/s:informace">
+        <sch:assert test="s:narozen &lt; current-date()">
+        Hráč se musel narodit dříve, než dnes!</sch:assert>
+    </sch:rule>
+</sch:pattern>
+    
+<sch:pattern>
+    <sch:title>Validace počtu her</sch:title>
+    <sch:rule context="s:LEC/s:tym/s:hraci/s:hrac/s:statitiky">
+        <sch:assert test="@pocetHer &lt;
+        s:LEC/s:tym[1]/s:hraci/s:hrac/s:statistiky/@pocetHer +1">
+        Nikdo nemohl odehrát více zápasů než první tým!</sch:assert>
+        <sch:assert test="@pocetHer &gt;
+        s:LEC/s:tym[4]/s:hraci/s:hrac/s:statistiky/@pocetHer -1">
+        Nikdo nemohl odehrát méně zápasů než poslední tým!</sch:assert>
+    </sch:rule>
+</sch:pattern>
+            
+]]>
+            </programlisting>
+            <para>Bohužel mi schématron vyhazuje error: Cannot find the declaration of element 'sch:schema'.</para>
+            <para>XML má asociaci se schématronem i se nachází ve stejné složce.</para>
+            <para>Domnívám se, že by měl být namespace v pořádku a chyba je někde jinde.</para>
+            
+
+        </section>
+    </chapter>
+    
+    <chapter>
+        <title>XSLT Styly</title>
+        <section>
+            <title>XSLT Transformace do HTML</title>
+            <para>XML soubor je transformován pomocí XSLT a připojených kaskádových stylů v souboru "LEC_2022_style.css"</para>
+            <para>Hlavní stránka obsahuje logo turnaje a jednotlivé týmy s jijivh logy.</para>
+            <para>Skrz podrobnosti se dá prokliknout na podrobné informace o každém týmu a hráči.</para>
+            <para>Pomocí variable se počítá věk z data narození u každého hráče.</para>
+            <programlisting>
+<![CDATA[
+
+<xsl:variable name="Vek" select="s:informace/s:narozen"/>
+
+<xsl:choose>
+    <xsl:when
+        test="month-from-date(current-date()) > month-from-date($Vek) 
+        or month-from-date(current-date()) =
+        month-from-date($Vek) and day-from-date(current-date())
+        >= day-from-date($Vek)">
+        <td>
+            <xsl:value-of
+                select="year-from-date(current-date()) - year-from-date($Vek)"
+            />
+        </td>
+    </xsl:when>
+    <xsl:otherwise>
+        <td>
+            <xsl:value-of
+                select="year-from-date(current-date()) 
+                - year-from-date($Vek) - 1"
+            />
+        </td>
+    </xsl:otherwise>
+</xsl:choose>
+
+]]>
+			</programlisting>
+            
+        </section>
+        <section>
+            <title>XSLT Transformace do PDF</title>
+            <para>Pro transformaci jsem zvolil klasický formát A4.</para>
+            <para>První strana obsahuje logo a nadpis.</para>
+            <para>Druhá strana obsahuje obsah, který odkazuje na jednotlivé stránky týmů.</para>
+            <para>Obsah ukazuje na jeká stránce se tým nachází a reaguje a posílá na donou stránku
+                kliknutím.</para>
+            <programlisting>
+<![CDATA[
+            
+<fo:block>           
+    <xsl:for-each select="/s:LEC/s:tym">
+        <fo:block text-align-last="justify"  margin-top="0.5cm">
+            <fo:basic-link internal-destination="{generate-id(@umisteni)}">
+                <xsl:value-of select="s:informace/s:nazev" />
+                <fo:leader leader-pattern="dots" />
+                <fo:page-number-citation ref-id="{generate-id(@umisteni)}" />
+            </fo:basic-link>
+        </fo:block>
+    </xsl:for-each>     
+</fo:block>
+            
+]]>
+			</programlisting>
+            
+        </section>
+    </chapter>
+    <chapter>
+        <title>Použitý software</title>
+        <para>Pro práci jsem používal software Oxygen a processor Antenna House.</para>
+        <para>Pro XSLT Transformace jsem používal Saxon-PE</para>
+    </chapter>
+    <chapter>
+        <title>Rejstřík</title>
+        <para>A</para>
+        <para>atribut WXS:</para>
+        
+        <para>attributeFormDefault, Jmenné prostory</para>
+        <para>elementFormDefault, Jmenné prostory</para>
+        <para>maxOccurs, Komplexní datové typy</para>
+        <para>minOccurs, Komplexní datové typy</para>
+        <para>namespace, Schéma</para>
+        <para>targetNamespace, Jmenné prostory,</para>
+        
+        <para></para>
+        <para>xs:attribute, XML schémata</para>
+        <para></para>
+        <para></para>
+        <para>C</para>
+        <para>xs:complexType, XML schémata</para>
+        <para>xs:choice, Komplexní datové typy</para>
+        <para></para>
+        <para></para>
+        <para>E</para>
+        <para>element WXS:</para>
+        <para></para>
+        <para>xs:attribute, XML schémata</para>
+        <para>xs:complexType, XML schémata</para>
+        <para>xs:element, XML schémata</para>
+        <para>xs:maxLength, Omezení délky</para>
+        <para>xs:minLength, Omezení délky</para>
+        <para>xs:pattern, Maska hodnoty</para>
+        <para>xs:sequence, XML schémata,</para>
+        <para>xs:simpleType, Omezení délky</para>
+        <para>xs:unique, Zajištění jedinečnosti hodno</para>
+        <para></para>
+        <para></para>
+        <para>N</para>
+        <para>namespace, Schéma definující elementy</para>
+        <para></para>
+        <para></para>
+        <para>R</para>
+        <para>xs:restriction, Omezení délky</para>
+        <para></para>
+        <para></para>
+        <para>T</para>
+        <para>targetNamespace, Jmenné prostory</para>
+        <para></para>
+        <para></para>
+        <para>X</para>
+        <para>xs:attribute, XML schémata</para>
+        <para>xs:maxLength, Omezení délky</para>
+        <para>xs:minLength, Omezení délky</para>
+        <para>xs:pattern, Maska hodnoty</para>
+        
+    </chapter>
+</book>

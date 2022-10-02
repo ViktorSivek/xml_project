@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="stranka" page-height="297mm" page-width="210mm"
+            margin="20mm">
+            <fo:region-body/>
+            <fo:region-before extent="10mm"/>
+            <fo:region-after extent="10mm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="stranka" font-family="Arial">
+        <fo:static-content flow-name="xsl-region-after">
+            <fo:block text-align="center">Strana <fo:page-number/></fo:block>
+        </fo:static-content>
+        <fo:flow flow-name="xsl-region-body">
+            <fo:block margin-top="40%" text-align="center"><fo:external-graphic src="url(logo.jpg)"
+                    content-width="15cm" width="100%"/></fo:block>
+            <fo:block font-size="200%" font-weight="600" text-align="center" margin-top="5mm"
+                >LEC</fo:block>
+            <fo:block font-size="200%" font-weight="600" text-align="center">Ročník 2022</fo:block>
+            <fo:block page-break-before="always" font-size="150%" font-weight="bold"
+                margin-top="2cm" margin-bottom="0.5cm" id="obsah"> Obsah </fo:block>
+            <fo:block><fo:block text-align-last="justify" margin-top="0.5cm"><fo:basic-link
+                        internal-destination="d1e5a1067">G2Esports<fo:leader leader-pattern="dots"
+                            /><fo:page-number-citation ref-id="d1e5a1067"
+                    /></fo:basic-link></fo:block><fo:block text-align-last="justify"
+                    margin-top="0.5cm"><fo:basic-link internal-destination="d1e233a1067"
+                            >Rogue<fo:leader leader-pattern="dots"/><fo:page-number-citation
+                            ref-id="d1e233a1067"/></fo:basic-link></fo:block><fo:block
+                    text-align-last="justify" margin-top="0.5cm"><fo:basic-link
+                        internal-destination="d1e460a1067">Fnatic<fo:leader leader-pattern="dots"
+                            /><fo:page-number-citation ref-id="d1e460a1067"
+                    /></fo:basic-link></fo:block><fo:block text-align-last="justify"
+                    margin-top="0.5cm"><fo:basic-link internal-destination="d1e686a1067"
+                            >MisfitsGaming<fo:leader leader-pattern="dots"/><fo:page-number-citation
+                            ref-id="d1e686a1067"/></fo:basic-link></fo:block></fo:block>
+            <fo:block page-break-before="always" font-size="150%" margin-top="1cm"
+                margin-bottom="5mm" font-weight="bold" text-align="center" id="d1e5a1067"
+                >G2Esports</fo:block>
+            <fo:block font-size="120%" font-weight="bold" margin-bottom="5mm">Základní
+                informace</fo:block>
+            <fo:block><fo:table border-width="3px" border-color="black" border-style="solid"
+                    width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Sídlo</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Vlastník</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Založení</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Partneři</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Web</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Germany</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Carlos Rodríguez Santiago</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2015-10-15</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block> Logitech Paysafecard Twitch BMW </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>https://www.g2esports.com/<fo:basic-link
+                                        external-destination="url('&#xA;            G2Esports&#xA;            Germany&#xA;            Carlos Rodríguez Santiago&#xA;            2015-10-15&#xA;            &#xA;                Logitech&#xA;                Paysafecard&#xA;                Twitch&#xA;                BMW&#xA;            &#xA;            https://www.g2esports.com/&#xA;        ')"
+                                    /></fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block font-size="120%" margin-bottom="5mm" margin-top="15mm" font-weight="bold"
+                >Statistiky</fo:block>
+            <fo:block margin-top="5mm"><fo:table border-width="3px" border-color="black"
+                    border-style="solid" width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Role</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Přezdívka</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Národnost</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Narozen</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zabití</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Smrti</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Asistence</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Farma/min</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zlano/min</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>horní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Broken Blade</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Germany</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-01-19</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.91</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.35</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.71</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.05</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>408</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>džungle</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Jankos</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Poland</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1995-07-23</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.5</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.03</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.35</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.21</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>333</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>středová</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>caPs</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Denmark</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1999-11-17</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.15</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.53</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.24</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.19</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>412</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>spodní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Flakked</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Spain</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2001-04-25</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.21</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.61</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.06</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>9.44</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>448</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>podpora</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Targamas</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Belgium</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-06-30</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.03</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.18</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>9.88</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.23</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>246</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block page-break-before="always" font-size="150%" margin-top="1cm"
+                margin-bottom="5mm" font-weight="bold" text-align="center" id="d1e233a1067"
+                >Rogue</fo:block>
+            <fo:block font-size="120%" font-weight="bold" margin-bottom="5mm">Základní
+                informace</fo:block>
+            <fo:block><fo:table border-width="3px" border-color="black" border-style="solid"
+                    width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Sídlo</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Vlastník</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Založení</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Partneři</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Web</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Germany</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Simon Payne</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2016-05-03</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block> ReKTGlobal Steve Aoki KIA </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>https://www.rogue.gg/<fo:basic-link
+                                        external-destination="url('&#xA;            Rogue&#xA;            Germany&#xA;            Simon Payne&#xA;            2016-05-03&#xA;            &#xA;                ReKTGlobal&#xA;                Steve Aoki&#xA;                KIA&#xA;            &#xA;            https://www.rogue.gg/&#xA;        ')"
+                                    /></fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block font-size="120%" margin-bottom="5mm" margin-top="15mm" font-weight="bold"
+                >Statistiky</fo:block>
+            <fo:block margin-top="5mm"><fo:table border-width="3px" border-color="black"
+                    border-style="solid" width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Role</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Přezdívka</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Národnost</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Narozen</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zabití</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Smrti</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Asistence</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Farma/min</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zlano/min</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>horní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Odoamne</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Romania</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1995-01-18</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.83</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.93</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.23</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.21</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>408</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>džungle</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Malrang</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>South Korea</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-02-09</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.8</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.67</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.07</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.65</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>328</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>středová</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Larssen</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Sweden</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-03-30</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.3</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.73</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.3</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.73</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>434</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>spodní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Comp</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Greece</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2001-12-20</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.57</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.73</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.37</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>9.94</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>467</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>podpora</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Trymbi</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Poland</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-10-20</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.1</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.8</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>10.4</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>0.84</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>247</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block page-break-before="always" font-size="150%" margin-top="1cm"
+                margin-bottom="5mm" font-weight="bold" text-align="center" id="d1e460a1067"
+                >Fnatic</fo:block>
+            <fo:block font-size="120%" font-weight="bold" margin-bottom="5mm">Základní
+                informace</fo:block>
+            <fo:block><fo:table border-width="3px" border-color="black" border-style="solid"
+                    width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Sídlo</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Vlastník</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Založení</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Partneři</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Web</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>United Kingdom</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Sam Mathews</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2011-03-14</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block> OnePlus Monster Energy AMD </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>https://www.fnatic.com/<fo:basic-link
+                                        external-destination="url('&#xA;            Fnatic&#xA;            United Kingdom&#xA;            Sam Mathews&#xA;            2011-03-14&#xA;            &#xA;                OnePlus&#xA;                Monster Energy&#xA;                AMD&#xA;            &#xA;            https://www.fnatic.com/&#xA;        ')"
+                                    /></fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block font-size="120%" margin-bottom="5mm" margin-top="15mm" font-weight="bold"
+                >Statistiky</fo:block>
+            <fo:block margin-top="5mm"><fo:table border-width="3px" border-color="black"
+                    border-style="solid" width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Role</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Přezdívka</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Národnost</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Narozen</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zabití</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Smrti</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Asistence</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Farma/min</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zlano/min</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>horní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Wunder</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Denmark</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1998-11-09</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.97</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.17</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.43</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>7.91</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>390</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>džungle</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Razork</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Spain</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-10-07</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.9</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.87</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.69</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>344</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>středová</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Humanoid</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Czech Republic</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2000-03-14</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.93</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.7</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.7</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.81</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>423</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>spodní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Upset</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Germany</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1999-12-16</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.83</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>0.93</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.1</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>9.47</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>437</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>podpora</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Hylissang</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Bulgaria</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1995-04-30</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.1</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.5</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.3</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.19</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>246</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block page-break-before="always" font-size="150%" margin-top="1cm"
+                margin-bottom="5mm" font-weight="bold" text-align="center" id="d1e686a1067"
+                >MisfitsGaming</fo:block>
+            <fo:block font-size="120%" font-weight="bold" margin-bottom="5mm">Základní
+                informace</fo:block>
+            <fo:block><fo:table border-width="3px" border-color="black" border-style="solid"
+                    width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Sídlo</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Vlastník</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Založení</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Partneři</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Web</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Germany</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Ben Spoont</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2016-05-18</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block> HyperX ASUS Intel Tezos </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>https://www.misfitsgaming.gg/<fo:basic-link
+                                        external-destination="url('&#xA;            MisfitsGaming&#xA;            Germany&#xA;            Ben Spoont&#xA;            2016-05-18&#xA;            &#xA;                HyperX&#xA;                ASUS&#xA;                Intel&#xA;                Tezos&#xA;            &#xA;            https://www.misfitsgaming.gg/&#xA;        ')"
+                                    /></fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+            <fo:block font-size="120%" margin-bottom="5mm" margin-top="15mm" font-weight="bold"
+                >Statistiky</fo:block>
+            <fo:block margin-top="5mm"><fo:table border-width="3px" border-color="black"
+                    border-style="solid" width="100%">
+                    <fo:table-header font-size="100%" font-weight="bold" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>Role</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Přezdívka</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Národnost</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Narozen</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zabití</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Smrti</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Asistence</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Farma/min</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Zlano/min</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body font-size="80%" text-align="center">
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>horní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>HiRit</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>South Korea</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1998-07-24</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.8</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.64</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.84</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.27</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>405</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>džungle</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Shlatan</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Poland</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2001-07-23</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1.96</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.76</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>6.72</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.38</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>330</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>středová</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Vetheo</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>France</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2002-07-26</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.68</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.16</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.24</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.72</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>427</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>spodní</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Neon</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Slovakia</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>1999-04-24</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>3.84</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2.56</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>5.04</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>9.1</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>435</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                        <fo:table-row border-bottom-color="black" border-bottom-width="3px"
+                            border-bottom-style="solid" line-height="80px">
+                            <fo:table-cell>
+                                <fo:block>podpora</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Mersa</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>Greece</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>2002-08-22</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>0.44</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>4.64</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>8.8</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>0.86</fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block>229</fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table></fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

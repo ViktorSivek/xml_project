@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:vse.cz:LEC2022:sivv01" 
+    xmlns="urn:vse.cz:LEC2022:sivv01"
+    elementFormDefault="qualified"> 
+    
+    <xs:element name="LEC" type="LECType">
+        <xs:unique name="unikatni_umisteni">
+            <xs:selector xpath="*/tym"/>
+            <xs:field xpath="@umisteni"/>
+        </xs:unique>
+    </xs:element>
+    
+    <xs:complexType name="LECType">
+        <xs:sequence>
+            <xs:element name="tym" type="tymType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="rok" type="rokType" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="tymType">
+        <xs:sequence>
+            <xs:element name="informace" type="informaceType" minOccurs="1"/>
+            <xs:element name="hraci" type="hraciType" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="umisteni" type="umisteniType" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="rokType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="umisteniType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:maxExclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="informaceType">
+        <xs:sequence>
+            <xs:element name="nazev" type="xs:string" minOccurs="1"/>
+            <xs:element name="sidlo" type="xs:string" minOccurs="1"/>
+            <xs:element name="vlastnik" type="xs:string" minOccurs="1"/>
+            <xs:element name="zalozeni" type="xs:date" minOccurs="1"/>
+            <xs:element name="partneri" type="partneriType" minOccurs="1"/>
+            <xs:element name="web" type="xs:anyURI" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="partneriType">
+        <xs:sequence>
+            <xs:element name="partner" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="hraciType">
+        <xs:sequence>
+            <xs:element name="hrac" type="hracType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="roleType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="horní"/>
+            <xs:enumeration value="džungle"/>
+            <xs:enumeration value="středová"/>
+            <xs:enumeration value="spodní"/>
+            <xs:enumeration value="podpora"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="hracType">
+        <xs:sequence>
+            <xs:element name="informace" type="informaceHracType" minOccurs="1"/>
+            <xs:element name="statistiky" type="statistikyType" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="role" type="roleType" use="required"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="pocetHerType">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0"/>
+            <xs:maxExclusive value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="informaceHracType">
+        <xs:sequence>
+            <xs:element name="prezdivka" type="xs:string" minOccurs="1"/>
+            <xs:element name="jmeno" type="xs:string" minOccurs="1"/>
+            <xs:element name="prijmeni" type="xs:string" minOccurs="1"/>
+            <xs:element name="narodnost" type="xs:string" minOccurs="1"/>
+            <xs:element name="narozen" type="xs:date" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="statistikyType">
+        <xs:sequence>
+            <xs:element name="zabiti" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="smrti" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="asistence" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="farmaZaMinutu" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="zlatoZaMinutu" type="xs:decimal" minOccurs="1"/>
+            <xs:element name="sampioni" type="sampioniType" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="pocetHer" type="pocetHerType" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="sampioniType">
+        <xs:sequence>
+            <xs:element name="sampion" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

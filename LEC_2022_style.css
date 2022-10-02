@@ -1,0 +1,66 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1350px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+table.table1{
+    border-style: solid;
+    border-width: 5px;
+    margin: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:  100%;
+    height:  100%;
+
+}
+
+table.table2{
+    border-style: solid;
+    border-width: 5px;
+    margin: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:  100%;
+    height:  100%;
+    
+}
+
+
+
+th.t1,td.t1  {
+    padding: 20px 20px;
+    font-size: 40px;
+}
+
+th.t2,td.t2 {
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+
+.text_center{
+    text-align: center;
+    
+}
+
+.text_left{
+    text-align: left !important;
+}
+
+.margin{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.velke{
+    font-size: 40px;
+}
+
+.stredni{
+    font-size: 30px;
+}
